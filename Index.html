@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RCEM Dog Bite Reporting & Management</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @media print {
+            body { background-color: white; }
+            .no-print { display: none; }
+            .print-break-inside-avoid { break-inside: avoid; }
+            .shadow-lg { box-shadow: none; border: 1px solid #e2e8f0; }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans p-4 md:p-8">
+
+    <div class="max-w-6xl mx-auto space-y-8">
+        
+        <!-- Header Section -->
+        <header class="bg-blue-900 text-white rounded-2xl p-6 md:p-10 shadow-lg flex flex-col md:flex-row items-center justify-between gap-6 print-break-inside-avoid">
+            <div class="space-y-4 text-center md:text-left">
+                <h1 class="text-3xl md:text-4xl font-bold tracking-tight">Dog Bite Management in the ED</h1>
+                <p class="text-blue-100 text-lg max-w-2xl">A practical clinical and legal reference for UK Emergency Medicine Doctors. Based on RCEM Guidelines, DFTB, and Dr Vicky Currie's clinical review.</p>
+            </div>
+            <div class="bg-white p-4 rounded-full text-blue-900 shadow-inner flex-shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M10 5.172C10 3.782 8.423 2.679 6.5 3c-2.823.47-4.113 6.006-4 7 .08.7.363 1.242.85 1.59.101.073.224.132.356.173L5 12.5l2 1.5 2.5-1 1-1.5z"></path>
+                    <path d="M14 5.172C14 3.782 15.577 2.679 17.5 3c2.823.47 4.113 6.006 4 7-.08.7-.363 1.242-.85 1.59-.101.073-.224.132-.356.173L19 12.5l-2 1.5-2.5-1-1-1.5z"></path>
+                    <path d="M10 16c0 1.5-1.5 3-3 3s-3-1.5-3-3 1.5-3 3-3 3 1.5 3 3z"></path>
+                    <path d="M20 16c0 1.5-1.5 3-3 3s-3-1.5-3-3 1.5-3 3-3 3 1.5 3 3z"></path>
+                    <path d="M15 20c0 1.5-1.5 3-3 3s-3-1.5-3-3 1.5-3 3-3 3 1.5 3 3z"></path>
+                </svg>
+            </div>
+        </header>
+
+        <!-- Core Principles Alert -->
+        <div class="bg-red-50 border-l-4 border-red-600 p-6 rounded-r-xl shadow-md print-break-inside-avoid">
+            <h2 class="text-xl font-bold text-red-900 flex items-center gap-2 mb-3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"></path><path d="M12 9v4"></path><path d="M12 17h.01"></path></svg>
+                The Reporting Golden Rule
+            </h2>
+            <p class="text-red-800 text-lg font-medium">You have no statutory obligation to report all dog bite injuries to the police.</p>
+            <p class="text-red-700 mt-2">Patient confidentiality remains your primary duty under GMC and Data Protection Act rules. You must make reporting decisions on a case-by-case basis. You should report if the bite links to a crime or presents an ongoing public safety risk.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- Epidemiology Section -->
+            <section class="bg-white rounded-xl shadow-md p-6 border border-slate-100 print-break-inside-avoid">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="bg-blue-100 p-3 rounded-lg text-blue-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"></path><path d="m19 9-5 5-4-4-3 3"></path></svg>
+                    </div>
+                    <h2 class="text-2xl font-bold text-slate-800">Epidemiology & Risk Factors</h2>
+                </div>
+                <ul class="space-y-3 text-slate-600">
+                    <li class="flex items-start gap-2">
+                        <svg class="w-5 h-5 text-blue-500 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        <span>England sees over 10,000 hospital admissions for dog bites annually. Children make up roughly 25% of these cases.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <svg class="w-5 h-5 text-blue-500 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        <span>75% of bites occur in the three most deprived socioeconomic deciles.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <svg class="w-5 h-5 text-blue-500 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        <span>Paediatric injuries involve the face or head 50% of the time.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <svg class="w-5 h-5 text-red-500 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                        <strong>Red Flag:</strong> You will frequently see severe dog bites in families with existing social care involvement or a history of domestic violence.
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Legal Background Section -->
+            <section class="bg-indigo-50 rounded-xl shadow-md p-6 border border-indigo-100 print-break-inside-avoid">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="bg-indigo-200 p-3 rounded-lg text-indigo-800">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"></path><path d="M12 12a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"></path></svg>
+                    </div>
+                    <h2 class="text-2xl font-bold text-indigo-900">The Legal Framework</h2>
+                </div>
+                <p class="text-indigo-800 font-medium mb-3">The Dangerous Dogs Act applies to any dog dangerously out of control in any place. The UK bans four specific dog types:</p>
+                <div class="grid grid-cols-2 gap-2 mb-4 text-indigo-900 font-semibold text-sm">
+                    <div class="bg-white p-2 rounded border border-indigo-100 text-center">Japanese Tosa</div>
+                    <div class="bg-white p-2 rounded border border-indigo-100 text-center">Dogo Argentino</div>
+                    <div class="bg-white p-2 rounded border border-indigo-100 text-center">Brazilian Mastiff</div>
+                    <div class="bg-white p-2 rounded border border-indigo-100 text-center">XL Bully Type</div>
+                </div>
+                <p class="text-indigo-800 text-sm mb-2 font-medium">Owners must meet five criteria to keep a banned breed legally:</p>
+                <ul class="list-disc list-inside space-y-1 text-sm text-indigo-700 ml-1">
+                    <li>The dog must be neutered.</li>
+                    <li>The dog must carry a microchip.</li>
+                    <li>The owner must keep the dog in a secure enclosure.</li>
+                    <li>The owner must hold third-party insurance.</li>
+                    <li>The owner must hold a Certificate of Exemption.</li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- Clinical Management Section -->
+        <section class="bg-white rounded-xl shadow-md p-6 border border-slate-100 print-break-inside-avoid">
+            <div class="flex items-center gap-3 mb-6">
+                <div class="bg-cyan-100 p-3 rounded-lg text-cyan-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path><path d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path></svg>
+                </div>
+                <h2 class="text-2xl font-bold text-slate-800">ED Clinical Management</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Initial Resus -->
+                <div class="bg-slate-50 p-4 rounded-lg border border-slate-200">
+                    <h3 class="font-bold text-slate-800 mb-2 text-lg">1. Initial Stabilisation</h3>
+                    <ul class="space-y-2 text-sm text-slate-600">
+                        <li>Apply standard C-ABC protocols. Control catastrophic haemorrhage first.</li>
+                        <li>Cover the wound with a clean non-adhesive dressing immediately.</li>
+                        <li><strong>Remove all jewellery promptly.</strong> Swelling will cause ischaemia.</li>
+                        <li>Provide rapid analgesia. Use intranasal fentanyl, diamorphine, or pentazocine.</li>
+                    </ul>
+                </div>
+
+                <!-- Wound Care -->
+                <div class="bg-slate-50 p-4 rounded-lg border border-slate-200">
+                    <h3 class="font-bold text-slate-800 mb-2 text-lg">2. Wound Care</h3>
+                    <ul class="space-y-2 text-sm text-slate-600">
+                        <li>Irrigate thoroughly with high-pressure saline. Create pressure using a bag of saline and a cut intravenous catheter.</li>
+                        <li>Refer large wounds for an operative washout in theatre.</li>
+                        <li>Close wounds under 12 hours old at most sites. You can close facial wounds up to 24 hours old.</li>
+                        <li>Leave older wounds open to heal.</li>
+                        <li>Lower your threshold for plastic surgery referral for bites to the head, face, hands, feet, tendons, or joints.</li>
+                    </ul>
+                </div>
+
+                <!-- Medication -->
+                <div class="bg-slate-50 p-4 rounded-lg border border-slate-200">
+                    <h3 class="font-bold text-slate-800 mb-2 text-lg">3. Antibiotics & Vaccines</h3>
+                    <ul class="space-y-2 text-sm text-slate-600">
+                        <li>Do not prescribe routine antibiotics for every bite.</li>
+                        <li>Prescribe antibiotics for deep punctures, crush injuries, contamination, delayed presentations, or bites to high-risk areas.</li>
+                        <li><strong>First Line:</strong> Co-amoxiclav 500/125mg three times daily.</li>
+                        <li><strong>Penicillin Allergy:</strong> Doxycycline 100mg twice daily.</li>
+                        <li><strong>Severe Infection:</strong> IV Co-amoxiclav 1.2g eight hourly.</li>
+                        <li>Check tetanus status. Booster adults at 10 years or 5 years for contaminated wounds. Give immunoglobulin for high-risk cases. UK rabies risk is negligible; consult the Green Book for travel exposures.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Safeguarding & Bias Section -->
+        <div class="grid md:grid-cols-2 gap-8">
+            <section class="bg-purple-50 rounded-xl shadow-md p-6 border border-purple-100 print-break-inside-avoid">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="bg-purple-200 p-3 rounded-lg text-purple-800">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                    </div>
+                    <h2 class="text-2xl font-bold text-purple-900">Safeguarding Children</h2>
+                </div>
+                <ul class="space-y-3 text-purple-800">
+                    <li class="flex items-start gap-2">
+                        <svg class="w-5 h-5 text-purple-500 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        <span>Judge each case individually based on the history and context.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <svg class="w-5 h-5 text-purple-500 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        <span>Refer automatically if the child already has social care involvement. These children represent a significantly higher risk profile.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <svg class="w-5 h-5 text-purple-500 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        <span>Distinguish between provoked and unprovoked attacks. Unprovoked attacks raise major concerns regarding dog temperament and environmental control.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <svg class="w-5 h-5 text-purple-500 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        <span>Ask parents for consent to disclose information. You can still share details with appropriate authorities if they refuse.</span>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="bg-amber-50 rounded-xl shadow-md p-6 border border-amber-200 print-break-inside-avoid">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="bg-amber-200 p-3 rounded-lg text-amber-800">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h4l3-9 5 18 3-9h5"></path></svg>
+                    </div>
+                    <h2 class="text-2xl font-bold text-amber-900">Check Your Biases</h2>
+                </div>
+                <p class="text-amber-800 mb-4">Clinical judgement heavily influences referral rates. Be aware of common cognitive biases when assessing risk.</p>
+                <div class="space-y-4">
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-amber-100">
+                        <h3 class="font-bold text-amber-900">Breed Bias</h3>
+                        <p class="text-sm text-amber-800 mt-1">Clinicians often under-report bites from familiar or "friendly" breeds like spaniels compared to large breeds like XL Bullies. You must treat every dog as a potential risk to children.</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-amber-100">
+                        <h3 class="font-bold text-amber-900">Ownership Bias</h3>
+                        <p class="text-sm text-amber-800 mt-1">Clinicians who own dogs themselves often have a lower threshold for specialist referral and reporting than those who do not.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Interactive Case Studies -->
+        <section class="bg-white rounded-xl shadow-md p-6 border border-slate-100 print-break-inside-avoid no-print">
+            <div class="flex items-center gap-3 mb-6">
+                <div class="bg-teal-100 p-3 rounded-lg text-teal-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                </div>
+                <h2 class="text-2xl font-bold text-slate-800">Test Your Knowledge: Clinical Scenarios</h2>
+            </div>
+
+            <div class="space-y-4">
+                <div class="border border-slate-200 rounded-lg overflow-hidden">
+                    <button onclick="toggleCase('case1')" class="w-full text-left p-4 bg-slate-50 hover:bg-slate-100 flex justify-between items-center font-semibold text-slate-800 transition-colors">
+                        <span>Case 1: The Familiar Family Dog</span>
+                        <svg id="icon-case1" class="w-5 h-5 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div id="content-case1" class="hidden p-4 bg-white text-slate-700 border-t border-slate-200">
+                        <p class="mb-3"><strong>Scenario:</strong> A 5-year-old girl suffers facial lacerations from the family dog. The dog is a non-banned breed they have owned for its whole life. There is no deep structural damage. The family opposes police involvement.</p>
+                        <div class="bg-amber-50 border-l-4 border-amber-500 p-3 text-amber-900">
+                            <strong>Action:</strong> Washout in theatre and admit under plastic surgery. Provide analgesia and antibiotics. Despite the family's opposition and the dog being a non-banned breed, you must still refer this to police and social care due to the unprovoked facial injury on a young child.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border border-slate-200 rounded-lg overflow-hidden">
+                    <button onclick="toggleCase('case2')" class="w-full text-left p-4 bg-slate-50 hover:bg-slate-100 flex justify-between items-center font-semibold text-slate-800 transition-colors">
+                        <span>Case 2: Unrestrained Attack</span>
+                        <svg id="icon-case2" class="w-5 h-5 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div id="content-case2" class="hidden p-4 bg-white text-slate-700 border-t border-slate-200">
+                        <p class="mb-3"><strong>Scenario:</strong> A 5-year-old boy is attacked on the road by two unrestrained XL Bully dogs. He sustains deep lacerations to his axilla, thigh, and arm. His CT abdomen is negative.</p>
+                        <div class="bg-red-50 border-l-4 border-red-500 p-3 text-red-900">
+                            <strong>Action:</strong> Resuscitate, provide IV antibiotics, and perform a theatre washout with plastic surgery. The police must be involved immediately as XL Bullies are a banned breed and they present a clear, ongoing public safety risk. Make an urgent social care referral due to the severity of the incident.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border border-slate-200 rounded-lg overflow-hidden">
+                    <button onclick="toggleCase('case3')" class="w-full text-left p-4 bg-slate-50 hover:bg-slate-100 flex justify-between items-center font-semibold text-slate-800 transition-colors">
+                        <span>Case 3: The Sleeping Dog</span>
+                        <svg id="icon-case3" class="w-5 h-5 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div id="content-case3" class="hidden p-4 bg-white text-slate-700 border-t border-slate-200">
+                        <p class="mb-3"><strong>Scenario:</strong> A 2-year-old girl attends with a superficial foot wound. She stepped on the paw of the sleeping family dog. The dog has no history of biting. There are no previous ED attendances for anyone in the household.</p>
+                        <div class="bg-green-50 border-l-4 border-green-500 p-3 text-green-900">
+                            <strong>Action:</strong> Irrigate the wound and discharge. Do not make a safeguarding referral. The mechanism fits the injury; the attack was provoked, there is no history of concern, and there are no other red flags.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center text-slate-500 text-sm py-8 print-break-inside-avoid border-t border-slate-200 mt-8">
+            <p>Based on the RCEM Best Practice Guideline for Dog Bites Reporting (Dec 2023/2025), DFTB Clinical Guidance, and lectures by Dr Vicky Currie.</p>
+            <p class="mt-4 flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="https://rcem.ac.uk/wp-content/uploads/2025/12/RCEM_Best-Practice_Guidance-for-reporting-of-Dog-Bites-Final.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-3 bg-slate-100 hover:bg-slate-200 text-blue-700 font-semibold rounded-lg transition-colors border border-slate-200 shadow-sm">
+                    Read the official RCEM Guideline PDF
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+                <a href="https://dontforgetthebubbles.com/dog-bites-in-children/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-3 bg-slate-100 hover:bg-slate-200 text-cyan-700 font-semibold rounded-lg transition-colors border border-slate-200 shadow-sm">
+                    Read DFTB Clinical Guidance
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+            </p>
+        </footer>
+
+    </div>
+
+    <script>
+        function toggleCase(caseId) {
+            const content = document.getElementById(`content-${caseId}`);
+            const icon = document.getElementById(`icon-${caseId}`);
+            
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.classList.add('rotate-180');
+            } else {
+                content.classList.add('hidden');
+                icon.classList.remove('rotate-180');
+            }
+        }
+    </script>
+</body>
+</html>
+
+
